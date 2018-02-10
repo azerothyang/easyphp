@@ -16,17 +16,13 @@ class MyClass
         return $sum;
     }
 }
-//print microtime(true) . "\n";
-//print MyClass::sum(100000000) . "\n";
-//print microtime(true) . "\n";
+print microtime(true) . "\n";
+print MyClass::sum(10000000) . "\n";
+print microtime(true) . "\n";
 
-$swch = 1;
-switch ($swch) {
-    case 1:
-        print 1111 . "\n";
-        break;
-    case 2:
-        print 2222 . "\n";
-        break;
-    default: print 0;
+function func(){
+   $GLOBALS['var'] = 2;
 }
+$var =1;
+func();
+var_dump($GLOBALS);
