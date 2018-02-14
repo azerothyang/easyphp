@@ -11,12 +11,24 @@ interface Action {
 }
 
 class Person implements Action {
+    private $name;
+
+    function __construct($name="person")
+    {
+        $this->name = $name;
+    }
+
     function say()
     {
         print "hello person\n";
         // TODO: Implement say() method.
     }
 
+    function __toString()
+    {
+        return $this->name;
+        // TODO: Implement __toString() method.
+    }
 }
 
 class Animal implements Action {

@@ -26,3 +26,5 @@ function func(){
 $var =1;
 func();
 var_dump($GLOBALS);
+
+
