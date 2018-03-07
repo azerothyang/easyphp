@@ -1,0 +1,1 @@
+swoole中如果开启Serialize模块, 会导致task任务投递模块, __sleep 魔术方法不再调用, easyswoole中superclosure与swoole的兼容性问题
